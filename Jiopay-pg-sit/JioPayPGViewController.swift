@@ -87,7 +87,7 @@ enum jsEvents {
     
     public init() {
         let pgBundle = Bundle(for: JioPayPGViewController.self)
-        super.init(nibName: "PGWebViewController", bundle: pgBundle)
+        super.init(nibName: "JioPayPGViewController", bundle: pgBundle)
     }
     
     @available(*, unavailable)
