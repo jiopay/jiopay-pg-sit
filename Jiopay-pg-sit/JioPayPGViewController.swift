@@ -7,7 +7,7 @@ let SCREEN_HEIGHT = UIScreen.main.bounds.height
 
 enum env {
     static let PP = "https://pp-checkout.jiopay.com:8443/"
-    static let SIT = "http://psp-mandate-merchant-sit.jiomoney.com:3003/pg"
+    static let SIT = "https://psp-mandate-merchant-sit.jiomoney.com:3003/pg"
     static let PROD = "https://checkout.jiopay.com"
 }
 
