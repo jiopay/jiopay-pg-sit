@@ -113,10 +113,12 @@ enum jsEvents {
             appIdToken = dict["appidtoken"] as! String
             cvv = (dict["cvv"] ?? "") as! String
             vaultId = (dict["vaultId"] ?? "") as! String
-            print("data: dict[checkout]")
-            print(dict["checkout"] )
-            checkout = String(data: dict["checkout"] as! Data, encoding: .utf8) ?? ""
-            print(checkout )
+            if dict["checkout"] != nil{
+                  do {
+                      let data1 =  try JSONSerialization.data(withJSONObject: dict["checkout"])
+                      checkout = String(data: data1, encoding: String.Encoding.utf8) ?? ""
+                     } catch { }
+            }
 
             if(theme != nil) {
               bodyBgColor = (theme!["bodyBgColor"] ?? "") as! String
