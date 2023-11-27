@@ -1,3 +1,3 @@
-# jiopay-pg-uat
+# jiopay-pg-sit
 
-Jiopay PG Debug library (UAT)
+Jiopay PG Debug library (SIT)
