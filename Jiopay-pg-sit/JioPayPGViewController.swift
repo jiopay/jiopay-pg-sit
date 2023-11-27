@@ -100,7 +100,7 @@ enum jsEvents {
            self.delegate = jioPayDelegate
            self.modalPresentationStyle = .fullScreen
            self.rootController?.present(self, animated: true, completion: nil)
-           self.parseData(data: jioPayData, url: env.PP)
+           self.parseData(data: jioPayData, url: env.SIT)
         }
     }
     
